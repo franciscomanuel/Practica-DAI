@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Mi Pagina</title>
+	<link rel="stylesheet" type="text/css" href="static/css/estilo.css" />
+	<!--[if IE 9]>
+		<link rel="stylesheet" type="text/css" href="static/css/ie9.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="static/css/ie8.css" />
+	<![endif]-->
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="static/css/ie7.css" />
+	<![endif]-->
+</head>
+<body>
+	<div id="header">
+		<div id="section">
+			<div> 
+				<h1> Periodico Deportivo </h1>
+				<h3> Liga BBVA </h3>
+		    </div>
+			<div>
+				<div id="logo">
+					<a href="inicio.html"><img src="static/images/logo_BBVA.jpg" alt="Logo" /></a>
+				</div>
+			</div>
+			<div>
+				% if mensaje:
+  					<span style="color:red"> ${mensaje} </span>
+				% endif
+				<form name="main" method="post" action="login"> 
+					${formularioLogin}
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div id="section">
+			<div>
+				<h1>Menu</h1>
+				<div id="navigation">
+					<div>
+						<ul>
+							<li class="current"><a href="inicio.html">Inicio</a></li>
+							<li><a href="clasificacion.html">Clasificacion</a></li>
+							<li><a href="encuentros.html">Encuentros</a></li>
+							<li><a href="formulario.html">Formulario</a></li>
+							<li><a href="mundial.html">Mundial</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="figure">
+				<h1> ${noticiaIker} </h1> <br><br><br>
+				<a href="inicio.html"><img src="${urlImagen1}" alt="Image" /></a>
+				<p> ${noticiaIker2}</p>
+			</div>
+			<div id="figure">
+				<h1> ${neymar}</h1> <br>
+				<a href="inicio.html"><img src="${urlImagen2}" alt="Image" /></a>
+				<p> <br> ${noticiaNeymar} </p>
+				<span></span>
+			</div>
+			<span class="background"></span>
+		</div>
+		<div id="featured">
+			<ul>
+				<li class="first">
+					<img src="${urlImagen3}" alt="Image" /></a>
+					<span></span>
+					<p> ${noticiaLorenzo}</p>
+				</li>
+				<li>
+					<img src="${urlImagen4}" alt="Image" /></a>
+					<span></span>
+					<p> ${noticiaGasol}</p>
+				</li>
+				<li>
+					<img src="${urlImagen5}" alt="Image" /></a>
+					<p> ${noticiaAragones}<p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<div class="first">
+
+				<div>
+					<p> Autor: <span>Francisco Manuel Sanchez Ramos </span></p>
+					<p>Email : <span>fran319@correo.ugr.es</span></p>
+				</div>
+			</div>
+			<div>
+				<p><a href="https://twitter.com/fran_manu90" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large">Seguir a @fran_manu90</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+				<div>
+					<a href="https://twitter.com/fran_manu90" class="twitter" target="_blank"></a>
+				</div>
+			</div>
+			<div>
+				<p>Copyright &copy; 2011  Periodico Deportivo <br />LRP 727 6783 83839 All rights reserved</p><br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

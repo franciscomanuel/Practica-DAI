@@ -1,0 +1,427 @@
+body {
+	background: url(../images/bg-body.gif) repeat center;
+	color: #80662b;
+	font-family: 'AndikaRegular';
+	font-size: 14px;
+	margin: 0;
+	min-width: 950px;
+	padding: 0;
+}
+
+a {
+	outline: none;
+}
+
+img {
+	border: 0;
+}
+
+p a {
+	color: #80662B;
+	font-style: italic;
+}
+
+#content div#section div table.borde{
+	border-style:solid;
+	border-width:1px;
+	border-color:red;
+}
+
+#content div#section div table caption{
+	color:blue;
+}
+
+#conten div #section div table th.a{
+	background-color:yellow;
+}
+
+th.b{
+	background-color:green;
+}
+
+th.c{
+	background-color:blue;
+}
+
+th.d{
+	background-color:white;
+}
+
+td.a{
+	background-color:pink;
+}
+
+td.b{
+	background-color:red;
+}
+
+td.c{
+	background-color:white;	
+}
+
+#header {
+	background: url(../images/bg-header.gif) repeat-x top center;
+	height: 126px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#header div {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 950px;
+}
+
+#header div div#logo {
+	float: left;
+	width: auto;
+	margin:0 55px 0 0;
+}
+
+#header div div#navigation {
+	background: url(../images/bg-navigation-right-curve.gif) no-repeat right top;
+	
+	font-family: 'CarterOneRegular';
+	float: right;
+	height: auto;
+	line-height: 50px;
+	margin-top: 27px;
+	text-transform: lowercase;
+	width: 614px;
+}
+
+#header div div#navigation div {
+	background: url(../images/bg-navigation-left-curve.gif) no-repeat left top;
+	padding-left: 4px;
+	height: 63px;
+	width: auto;
+}
+
+#header div div#navigation div ul {
+	background: url(../images/bg-navigation.gif) repeat-x;
+	clear: both;
+	float: left;
+	height: 63px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	min-width: 600px;
+}
+
+#header div div#navigation div ul li:first-child {
+	background: none;
+}
+
+#header div div#navigation div ul li {
+	background: url(../images/separator-navigation.gif) no-repeat center left;
+	float: left;
+	padding: 0 30px;
+}
+
+#header div div#navigation div ul li a {
+	color: #b99b5f;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #efd9c4;
+}
+
+#header div div#navigation div ul li.current a, 
+#header div div#navigation div ul li a:hover {
+	color: #2e5306;
+	text-shadow: 1px 1px 0 #f2fcd9;
+}
+
+/*Desde aqui*/
+#header div#section div, #content div.section div {
+	background: none;
+	float: left;
+    margin-left: 0;
+    padding-top: 0;
+    width: 286px;
+}
+
+#header div#section div form{
+	margin-left: 50px;
+}
+
+#header div#section div h1 {
+	color: red;
+	font-family: 'CarterOneRegular';
+	font-size: 34px;
+	line-height: 34px;
+	margin: 0;
+	padding: 0;
+	text-shadow: 1px 1px 0 #fff0d8;
+	width: auto;
+}
+
+#header div#section div h3 {
+	color: green;
+	font-family: 'CarterOneRegular';
+	font-size: 34px;
+	line-height: 34px;
+	margin: 0;
+	padding: 0;
+	text-shadow: 1px 1px 0 #fff0d8;
+	width: auto;
+}
+
+
+
+#header div#section div p {
+	line-height: 21px;
+	margin: 0;
+	padding: 15px 0 0;
+	text-align: justify;
+	text-shadow: 1px 1px 0 #f4dcb6;
+	width: auto;
+}
+
+
+#header div#section div span {
+	background: none;
+	display: block;
+    height: auto;
+	font-size: 13px;
+    left: 0;
+    margin-top: 17px;
+    position: static;
+    top: 0;
+    width: auto;
+}
+
+#header div#section div span a {
+	background: url(../images/sprites-buttons.gif) no-repeat 0 -303px;
+	color: #fdfdfb;
+	display: inline-block;
+	font-family: 'CarterOneRegular';
+	font-size: 16px;
+    height: 38px;
+    line-height: 37px;
+	margin-left: 10px;
+    text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #216b20;
+    width: 136px;
+}
+
+#header div#section div span a.first {
+	margin-left: 0;
+}
+
+
+
+#header div#section div#figure {
+	margin-left: 0px;
+	width: 300px;
+}
+
+#header div#section div#figure img, 
+#header div div img, #content div#featured ul li img {
+	border: 3px solid #fff;
+}
+#header div#section div#figure span {
+	background: url(../images/bg-headliner-image-shadow.jpg) no-repeat center;
+	display: block;
+	height: 13px;
+	margin-top: -6px;
+	width: 612px;
+}
+
+#header div#featured ul li p a {
+	color: #525252;
+}
+
+#header div#section span.background {
+	background: url(../images/bg-headliner-bottom-shadow.jpg) no-repeat center;
+	top: 328px;
+	display: block;
+	height: 37px;
+	position: relative;
+	width: 950px;
+}
+
+#content {
+	background: url(../images/bg-headliner.gif) repeat top center;
+	height: auto;
+	width: 100%;
+}
+
+#content div#section {
+	background: url(../images/bg-headliner-top-shadow.jpg) no-repeat top center;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 35px 0 0;
+	position: relative;
+	width: 1150px;
+}
+
+#content div#section div, #content div.section div {
+	background: none;
+	float: left;
+    margin-left: 0;
+    padding-top: 0;
+    width: 300px;
+}
+
+#content div#tablas{
+
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 35px 0 0;
+	position: relative;
+	width: 1150px;
+}
+
+#content div#tablas div, #content div.tablas div {
+	background: none;
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+#footer {
+	background: url(../images/bg-footer.gif) repeat-x left top;
+	height: 200px;
+	width: 100%;
+}
+
+#footer div {
+	color: #dadada;
+	float: none;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 10px;
+	width: 950px;
+}
+
+#footer div div {
+	float: left;
+	height: auto;
+	margin-left: 46px;
+    width: 286px;
+}
+
+#footer div div.first {
+	margin-left:  0;
+}
+
+#footer div div p {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0;
+	text-align: left;
+}
+
+#footer div div h3 {
+	color: #fcfcfc;
+	font-family: 'CarterOneRegular';
+	font-size: 20px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+#footer div div h3 a {
+	background: url(../images/logo-footer.gif) no-repeat;
+	display: block;
+	height: 30px;
+	text-indent: -99999px;
+}
+
+#footer div div div {
+	height: auto;
+	margin-left: 0;
+    margin-top: 10px;
+}
+
+#footer div div div p {
+	font-size: 14px;
+	line-height: 25px;
+	margin: 0;
+}
+
+#footer div div div p span {
+	color: #383435;
+	display: inline;
+	font-style: italic;
+}
+
+#footer div div div a {
+	display: inline-block;
+	height: 63px;
+	margin-left: 44px; 
+	padding-top: 10px;	
+	width: 63px;
+}
+
+#footer div div div a.facebook {
+	background: url(../images/sprites-icon.gif) no-repeat 0 9px;
+	margin-left: 0;
+}
+
+#footer div div div a.twitter {
+	background: url(../images/sprites-icon.gif) no-repeat 0 -137px;	
+}
+
+#footer div div div a.linked-in {
+	background: url(../images/sprites-icon.gif) no-repeat 0 -63px;	
+}
+
+#footer div div form {
+	height: 40px;
+	margin-top: 25px;
+	overflow: hidden;
+}
+
+#footer div div form label {
+	float: left;
+}
+
+#footer div div form input#subscribe {
+	background: url(../images/sprites-inputs.gif) no-repeat 0 -131px;
+	border: 0;
+	color: #fffeff;
+	height: 29px;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 29px;
+	padding: 0 5px;
+	width: 160px;
+}
+
+#footer div div form input.submit {
+	background: url(../images/sprites-buttons.gif) no-repeat 0 -218px;
+	border: 0;
+	float: left;
+	height: 29px;
+	margin-left: 12px;
+	width: 100px;
+}
+
+@font-face {
+    font-family: 'AndikaRegular';
+    src: url('../fonts/andika-r-webfont.eot');
+    src: url('../fonts/andika-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/andika-r-webfont.woff') format('woff'),
+         url('../fonts/andika-r-webfont.ttf') format('truetype'),
+         url('../fonts/andika-r-webfont.svg#AndikaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CarterOneRegular';
+    src: url('../fonts/carterone-webfont.eot');
+    src: url('../fonts/carterone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/carterone-webfont.woff') format('woff'),
+         url('../fonts/carterone-webfont.ttf') format('truetype'),
+         url('../fonts/carterone-webfont.svg#CarterOneRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

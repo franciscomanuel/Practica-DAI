@@ -1,0 +1,21 @@
+$def with (form)
+
+<form method="post">
+	$if not form.valid: <p class="error">Intentalo de nuevo, americano</p>
+	$:<html>
+          <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <title>Formulario</title>
+            <link rel="stylesheet" href="~/Documentos/Facultad/DAI/practica3/static/archivo.css">
+          </head>
+          <body>
+            <h1>Formulario</h1>
+            
+            <p>Formulario a rellenar por el usuario.</p>
+            
+            <form method="POST">
+            %s
+            </form>
+          </body>
+        </html> % form.render()
+</form>

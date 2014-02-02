@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Mi Pagina</title>
+	
+	<link rel="stylesheet" type="text/css" href="static/css/clasif.css" />
+	<script type='text/javascript' src='http://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+    
+    	// Cargar el API de visualización y los paquetes para los gráficos
+    	google.load('visualization', '1.0', {'packages':['corechart']});
+    	
+    	// Establecer una devolución de llamada que se ejecutará cuando se carga el API de visualización de Google.
+      	google.setOnLoadCallback(drawGrafica);
+      	
+      	function drawGrafica() {
+
+        // Crear la tabla de datos.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Nombres');
+        data.addColumn('number', 'Goles');
+        data.addRows([
+          ['${nombre1}', ${goles1}],
+          ['${nombre2}', ${goles2}],
+          ['${nombre3}', ${goles3}],
+          ['${nombre4}', ${goles4}],
+          ['${nombre5}', ${goles5}]
+        ]);
+
+        // Configurar las opciones de la gráfica
+        var options = {'title':'Goleadores Liga BBVA',
+                       'width':500,
+                       'height':200};
+
+        // Crear instancias y dibujar nuestra tabla, que pasa en algunas opciones.
+        var chart = new google.visualization.ColumnChart(document.getElementById('grafica_div'));
+        chart.draw(data, options);
+      }  
+    </script>
+</head>
+<body>
+	<div id="header">
+		<div id="section">
+			<div> 
+				<h1> Periodico Deportivo </h1>
+				<h3> Liga BBVA </h3>
+		    </div>
+			<div>
+				<div id="logo">
+					<a href="inicio.html"><img src="static/images/logo_BBVA.jpg" alt="Logo" /></a>
+				</div>
+			</div>
+			<div>
+				% if mensaje:
+  					<span style="color:red"> ${mensaje} </span>
+				% endif
+				${var}
+				<a href="/logout">logout</a>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div id="section">
+			<div>
+				<h1>Menu</h1>
+				<div id="navigation">
+					<div>
+						<ul>
+							<li class="current"><a href="inicio.html">Inicio</a></li>
+							<li><a href="clasificacion.html">Clasificacion</a></li>
+							<li><a href="encuentros.html">Encuentros</a></li>
+							<li><a href="formulario.html">Mi perfil</a></li>
+							<li><a href="encuesta.html">Encuesta</a></li>
+							<li><a href="mundial.html">Mundial</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div>
+				<p> Tablas de goleadores </p>
+				<table border="1">
+					<tr>
+						<td>Nombre</td>
+						<td>Equipo</td>
+						<td>Goles</td>
+					</tr>
+					<tr>
+						<td>${nombre1}</td>
+						<td>${equipo1}</td>
+						<td>${goles1}</td>
+					</tr>
+					<tr>
+						<td>${nombre2}</td>
+						<td>${equipo2}</td>
+						<td>${goles2}</td>
+					</tr>
+					<tr>
+						<td>${nombre3}</td>
+						<td>${equipo3}</td>
+						<td>${goles3}</td>
+					</tr>
+					<tr>
+						<td>${nombre4}</td>
+						<td>${equipo4}</td>
+						<td>${goles4}</td>
+					</tr>
+					<tr>
+						<td>${nombre5}</td>
+						<td>${equipo5}</td>
+						<td>${goles5}</td>
+					</tr>
+	           </table>
+			</div>
+		</div>
+		<div id="tablas">
+			<div id="grafica_div" style='width: 700px; height: 540px;'></div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<div class="first">
+
+				<div>
+					<p> Autor: <span>Francisco Manuel Sanchez Ramos </span></p>
+					<p>Email : <span>fran319@correo.ugr.es</span></p>
+				</div>
+			</div>
+			<div>
+				<h3>Sigueme en twitter</h3>
+				<div>
+					<a href="https://twitter.com/fran_manu90" class="twitter" target="_blank"></a>
+				</div>
+			</div>
+			<div>
+				<p>Copyright &copy; 2011  Periodico Deportivo <br />LRP 727 6783 83839 All rights reserved</p><br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

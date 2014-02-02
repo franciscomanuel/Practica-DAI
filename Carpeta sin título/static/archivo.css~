@@ -1,0 +1,25 @@
+body {
+  padding: 1em;
+  margin: 1em;
+  margin-left: 5em;
+  margin-right: 5em;
+  border: 1px solid #aaaaaa;
+  border-radius: 1em;
+  box-shadow: 0.5em 0.5em 0.15em #333333;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #aaaaaa; 
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 0.05em 0.05em 0.1em #444444;
+}
+
+code {
+  color: #cc0000;
+  font-weight: bold;
+}
+
+p {
+  color:blue
+}

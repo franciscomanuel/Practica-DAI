@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Mi Pagina</title>
+	<link rel="stylesheet" type="text/css" href="static/css/clasif.css" />
+	<!--[if IE 9]>
+		<link rel="stylesheet" type="text/css" href="static/css/ie9.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="static/css/ie8.css" />
+	<![endif]-->
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="static/css/ie7.css" />
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="static/css/clasif.css" />
+	<script type='text/javascript' src='http://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+    
+    	// Cargar el API de visualización y los paquetes para los gráficos
+    	google.load('visualization', '1.0', {'packages':['corechart']});
+    	
+    	// Establecer una devolución de llamada que se ejecutará cuando se carga el API de visualización de Google.
+      	google.setOnLoadCallback(drawGrafica3);
+
+      	function drawGrafica3() {
+
+        // Crear la tabla de datos.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Nombres');
+        data.addColumn('number', 'Goles');
+        data.addRows([
+          ['Cristiano Ronaldo', ${v1}],
+          ['Messi', ${v2}],
+          ['Diego Costa', ${v3}],
+          ['Griezmann', ${v4}],
+          ['Alexis', ${v5}]
+        ]);
+
+        // Configurar las opciones de la gráfica
+        var options = {'title':'Goleadores Liga BBVA',
+                       'width':400,
+                       'height':300};
+
+        // Crear instancias y dibujar nuestra tabla, que pasa en algunas opciones.
+        var chart = new google.visualization.PieChart(document.getElementById('grafica_div'));
+        chart.draw(data, options);
+      	}  
+    </script>
+</head>
+<body>
+	<div id="header">
+		<div id="section">
+			<div> 
+				<h1> Periodico Deportivo </h1>
+				<h3> Liga BBVA </h3>
+		    </div>
+			<div>
+				<div id="logo">
+					<a href="inicio.html"><img src="static/images/logo_BBVA.jpg" alt="Logo" /></a>
+				</div>
+			</div>
+			<div>
+					% if mensaje:
+	  					<span style="color:red"> ${mensaje} </span>
+					% endif
+					${var}
+					<a href="/logout">logout</a>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div id="section">
+			<div>
+				<h1>Menu</h1>
+				<div id="navigation">
+					<div>
+						<ul>
+							<li class="current"><a href="inicio.html">Inicio</a></li>
+							<li><a href="clasificacion.html">Clasificacion</a></li>
+							<li><a href="encuentros.html">Encuentros</a></li>
+							<li><a href="encuesta.html">Encuesta</a></li>
+							<li><a href="mundial.html">Mundial</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h1> Gracias por contestar a nuestra encuesta!!! </h1>
+				<h2 > A continuación se muestra la grafica con los porcentajes y los nombres de los jugadores </h2>
+			</div>
+			<div>
+				<img src="static/images/Pichichi_fotos.jpg" alt="Pichichi" width="300" height="200"  />
+			</div>
+		</div>
+		<div id="tablas">
+			<div id="grafica_div" style='width: 300px; height: 340px;'></div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<div class="first">
+
+				<div>
+					<p> Autor: <span>Francisco Manuel Sanchez Ramos </span></p>
+					<p>Email : <span>fran319@correo.ugr.es</span></p>
+				</div>
+			</div>
+			<div>
+				<h3>Sigueme en twitter</h3>
+				<div>
+					<a href="https://twitter.com/fran_manu90" class="twitter" target="_blank"></a>
+				</div>
+			</div>
+			<div>
+				<p>Copyright &copy; 2011  Periodico Deportivo <br />LRP 727 6783 83839 All rights reserved</p><br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
